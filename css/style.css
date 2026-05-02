@@ -1,0 +1,252 @@
+:root {
+    --color-bg: rgb(86, 235, 133);
+    --color-dark: black;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+}
+
+.container {
+    width: 98%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: black;
+}
+
+.section-header {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+img{
+    border-radius: 20px;
+}
+/*====================*NAVIGATION*=======================================*/
+
+header {
+    background-color: var(--color-bg);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#nav-links {
+    display: flex;
+    gap: 15px;
+
+
+}
+
+
+
+
+/*===========================MAIN=======================*/
+main {
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
+
+/*============================*PROFILE*==============================*/
+#profile {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    #profile-info {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+
+        #profile-name {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #profile-realname {
+            text-align: center;
+
+        }
+
+    }
+
+    #profile-image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 400px;
+            object-fit: cover;
+        }
+    }
+}
+
+/* =================== history ==================== */
+
+#history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#history-image {
+    display: flex;
+    justify-content: center;
+
+    img {
+        max-width: 400px;
+        object-fit: cover;
+    }
+}
+
+#history-content {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    #history-title {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    p {
+        margin: 0;
+        text-indent: 30px;
+        text-align: justify;
+    }
+}
+
+/*=========================== GALLERY =====================*/
+#gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    .gallery-item {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/*===========================ABILITIES========================================*/
+#abilities{
+    margin-bottom: 30px;
+}
+#ability-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.ability {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.ability-icon {
+    font-size: 20px;
+}
+
+.ability-name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ability-description {
+    text-align: center;
+}
+
+/*=============================*FOOTER*=============================*/
+footer {
+    background-color: var(--color-bg);
+
+
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*======================================*ADAPTIve================================*/
+@media (max-width:768px) {
+
+#logo{
+display: none;
+}
+
+    #profile {
+        grid-template-columns: 1fr;
+    }
+
+    #history {
+        grid-template-columns: 1fr;
+
+        #history-image {
+            order: 2;
+        }
+
+        #history-content {
+            order: 1;
+        }
+
+    }
+
+    #gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+     #abilities-grid {
+        grid-template-columns: 1fr 1fr;
+}
+}
