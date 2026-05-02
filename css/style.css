@@ -35,9 +35,11 @@ a:hover {
     font-weight: bold;
     margin-bottom: 10px;
 }
-img{
+
+img {
     border-radius: 20px;
 }
+
 /*====================*NAVIGATION*=======================================*/
 
 header {
@@ -170,9 +172,10 @@ main {
 }
 
 /*===========================ABILITIES========================================*/
-#abilities{
+#abilities {
     margin-bottom: 30px;
 }
+
 #ability-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -222,9 +225,9 @@ footer {
 /*======================================*ADAPTIve================================*/
 @media (max-width:768px) {
 
-#logo{
-display: none;
-}
+    #logo {
+        display: none;
+    }
 
     #profile {
         grid-template-columns: 1fr;
@@ -246,7 +249,8 @@ display: none;
     #gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
-     #abilities-grid {
+
+    #ability-grid {
         grid-template-columns: 1fr 1fr;
-}
+    }
 }
